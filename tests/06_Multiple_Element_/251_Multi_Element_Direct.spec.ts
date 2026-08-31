@@ -10,4 +10,4 @@ test('Basic verify how to handle multiple elements ', async ({ page }) => {
     // getByRole, getByText() - not unique
     await page.pause();
     await page.getByTestId('forgotten-password-link').click();
-});
+}); 

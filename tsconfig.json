@@ -1,26 +1,26 @@
 {
     "compilerOptions": {
-        "target": "ES2020",
-        "module": "Node16",
+        "target": "ES2022",
+        "module": "CommonJS",
+        "moduleResolution": "node",
         "lib": [
-            "ES2020",
+            "ES2022",
             "DOM"
         ],
         "types": [
-            "node",
-            "@playwright/test"
+            "node"
         ],
-        "moduleResolution": "node16",
-        "strict": false,
         "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": false,
         "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "resolveJsonModule": true
+        "resolveJsonModule": true,
+        "sourceMap": true,
+        "baseUrl": "."
     },
     "include": [
-        "tests/**/*",
-        "playwright.config.ts",
-        "types.d.ts"
+        "tests/**/*.ts",
+        "*.ts"
     ],
     "exclude": [
         "node_modules"
